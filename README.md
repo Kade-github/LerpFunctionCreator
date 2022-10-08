@@ -3,6 +3,10 @@
 # LerpFunctionCreator
 Lerp Function Creator (LFC) is a simple but powerful tool to create a Linear Interpolation Curve (Lerp Curve) in C++/Lua.
 
+## Download
+
+Go on over to the [Releases](https://github.com/KadeDev/LerpFunctionCreator/releases) page to get a Windows Binary.
+
 ## Tutorial
 
 ### Steps
