@@ -89,7 +89,7 @@ namespace LerpCreation
       string lua = "-- Requires math functions to be exposed!\n\nfunction LerpFunc(t)\n  local val = t\n";
       if (steps.Count != 0)
       {
-        for (double i = 0; i <= 1.1; i += 0.05)
+        for (double i = 0; i <= 1.1; i += 0.1)
         {
           double y = i;
           foreach (LerpStep s in steps)
@@ -322,7 +322,15 @@ namespace LerpCreation
 
     private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
     {
-      currentStep = steps[((ListBox) sender).SelectedIndex];
+      try
+      {
+        currentStep = steps[((ListBox) sender).SelectedIndex];
+      }
+      catch
+      {
+        // ignored
+      }
+      
     }
 
     // dark mode (too lazy to rename)
