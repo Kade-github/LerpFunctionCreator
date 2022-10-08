@@ -89,7 +89,7 @@ namespace LerpCreation
       string lua = "-- Requires math functions to be exposed!\n\nfunction LerpFunc(t)\n  local val = t\n";
       if (steps.Count != 0)
       {
-        for (double i = 0; i <= 1.1; i += 0.1)
+        for (double i = 0; i <= 1.1; i += 0.05)
         {
           double y = i;
           foreach (LerpStep s in steps)
